@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário</title>
+    <!--BOOTSTRAP-->
+    <link rel="stylesheet" href="./css/bootstrap.min.css">
+    <!--MY CSS-->
+    <link rel="stylesheet" href="./css/main.css">
+</head>
+
+<body>
+    <section class="section1-form">
+        <form class="container-form" id="form1" method="get">
+            <h1>Formulário de Cadastro</h1>
+            <div class="mb-3">
+                <label for="nomeInput" class="form-label">Nome</label>
+                <input type="text" class="form-control" id="nomeInput" aria-describedby="nome" placeholder="Digite o seu nome">
+                <div id="nomeMessage" class="form-text message">O campo nome não pode estar vazio.</div>
+            </div>
+
+            <div class="mb-3">
+                <label for="sobrenomeInput" class="form-label">Sobrenome</label>
+                <input type="text" class="form-control" id="sobrenomeInput" aria-describedby="sobrenome" placeholder="Digite o seu sobrenome">
+                <div id="sobrenomeMessage" class="form-text message">O campo sobrenome não pode estar vazio.</div>
+            </div>
+
+            <div class="mb-3">
+                <label for="cpfInput" class="form-label">CPF</label>
+                <input type="text" class="form-control" id="cpfInput" aria-describedby="cpf" placeholder="Ex: 999.999.999-99">
+                <div id="cpfMessage" class="form-text message">O campo CPF não pode estar vazio.</div>
+            </div>
+
+            <div class="mb-3">
+                <label for="usuariInput" class="form-label">Usuário</label>
+                <input type="text" class="form-control" id="usuarioInput" placeholder="Somente letras ou números">
+                <div id="usuarioMessage" class="form-text message">O campo USUÁRIO não pode estar vazio.</div>
+            </div>
+
+            <div class="mb-3">
+                <label for="senhaInput" class="form-label">Senha</label>
+                <input type="password" class="form-control" id="senhaInput" placeholder="Entre 6 e 12 caracteres">
+                <div id="senhaMessage" class="form-text message">O campo SENHA não pode estar vazio.</div>
+            </div>
+
+            <div class="mb-3">
+                <label for="rSenhaInput" class="form-label">Repetir Senha</label>
+                <input type="password" class="form-control" id="rSenhaInput" placeholder="Repita sua senha">
+                <div id="senhaMessage" class="form-text message">O campo REPETIR SENHA não pode estar vazio.</div>
+            </div>
+
+            <button type="submit" class="btn btn-success">Submit</button>
+        </form>
+    </section>
+    <section class="section2">
+        Desenvolvido por Igor Silva
+    </section>
+
+    <!--BOOTSTRAP-->
+    <script src="./js/bootstrap.bundle.min.js"></script>
+    <!--My JS-->
+    <script src="./js/main.js"></script>
+    <script src="./js/cpf.js"></script>
+</body>
+
+</html>
